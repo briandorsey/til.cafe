@@ -1,7 +1,8 @@
 +++
-title = "Today I learned (TIL)"
+title = "Blog"
 description = "TODO"
 sort_by = "date"
+#transparent = true
 
 +++
 

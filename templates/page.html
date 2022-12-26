@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %} TIL {% endblock title %}
+{% block content %}
+
+<h3>{{page.title}}</h3>
+    <p><a href="{{page.permalink}}">{{page.date}}</a><br/>
+
+    {{ page.content | safe }}
+{% endblock content %}

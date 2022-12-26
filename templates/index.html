@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 {% block title %} TIL {% endblock title %}
 {% block content %}
-        {% for page in section.pages %}
-        <p>{{page.date}} - <a href="{{page.permalink}}">{{page.title}}</a><br/>
-        {% if page.summary %} {{page.summary | markdown(inline=true) |safe}} {% else %} {{page.extra.summary}} {% endif %}</p>
-        {% endfor %}
+
+<h3>Posts</h3>
+    {% set section = get_section(path="blog/_index.md") %}
+    {% for page in section.pages %}
+    <p>{{page.date}} - {{page.taxonomies.post_type[0]}}  - <a href="{{page.permalink}}">{{page.title}}</a><br/>
+    &nbsp; &nbsp; {% if page.summary %} {{page.summary | markdown(inline=true) |safe}} {% else %} {{page.extra.summary}} {% endif %}</p>
+    {% endfor %}
 
 {% endblock content %}

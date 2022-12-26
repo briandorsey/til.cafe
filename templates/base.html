@@ -12,15 +12,17 @@
     {% endblock head %}
 </head>
 <body>
-    <div id="header">{% block header %}
-        <h1><a href="{{config.base_url}}">{{config.title}}</a> 
-            - {{section.title}}</h1>
+    <div id="header">
+        {% block header %}
+        <h1><a href="{{config.base_url}}">{{config.title}}</a> </h1>
         <h2>{{config.description}}</h2>
+        </br>
         {% endblock header %}</div>
     <div id="content">{% block content %}{% endblock content %}</div>
     <div id="footer">
+        </br></br>
         {% block footer %}
-        [TODO: footer]
+        [TODO: footer] Made with <a href="https://www.getzola.org/">Zola</a>
         {% endblock footer %}
     </div>
 </body>
