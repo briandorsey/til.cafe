@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %} TIL {% endblock title %}
+{% block content %}
+        {% for page in section.pages %}
+        <p>{{page.date}} - <a href="{{page.permalink}}">{{page.title}}</a><br/>
+        {% if page.summary %} {{page.summary | markdown(inline=true) |safe}} {% else %} {{page.extra.summary}} {% endif %}</p>
+        {% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}{% endblock title %} - 
+    {{config.title}}</title>
+    {% block rss %}
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    {% endblock %}
+<link href="/style.css" rel="stylesheet">
+    {% endblock head %}
+</head>
+<body>
+    <div id="header">{% block header %}
+        <h1><a href="{{config.base_url}}">{{config.title}}</a> 
+            - {{section.title}}</h1>
+        <h2>{{config.description}}</h2>
+        {% endblock header %}</div>
+    <div id="content">{% block content %}{% endblock content %}</div>
+    <div id="footer">
+        {% block footer %}
+        [TODO: footer]
+        {% endblock footer %}
+    </div>
+</body>
+</html>
+<!--
+        {{__tera_context }}
+-->
