@@ -1,9 +1,24 @@
 # til.cafe
 Source for https://til.cafe
 
+## handy commands
+
+```
+zola build
+```
+
+```
+zola serve
+```
+
+docker stuff
+```
+docker build -t til.cafe:c .
+docker run -p 8080:8080 til.cafe:c
+```
 
 
-TODOs
+# TODOs
 - [x] add solarized
 - [x] pick a body font
 - [x] create just blog section
