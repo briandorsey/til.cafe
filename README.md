@@ -13,8 +13,12 @@ zola serve
 
 docker stuff
 ```
-docker build -t til.cafe:c .
-docker run -p 8080:8080 til.cafe:c
+docker build -t til.cafe:tag .
+docker run -p 8080:8080 til.cafe:tag
+```
+
+```
+gcloud run deploy til-cafe --allow-unauthenticated --max-instances=3 --region=us-west1 --project=til-cafe --source .
 ```
 
 
