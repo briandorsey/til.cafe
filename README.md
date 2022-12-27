@@ -31,9 +31,9 @@ gcloud run deploy til-cafe --allow-unauthenticated --max-instances=3 --region=us
 - [ ] make a template for each section type
 - [ ] setup Berlely Mono for coding font
 - [ ] figure out sections & taxonomies
-- [ ] setup a DockerFile to make a Caddy container
-- [ ] push local docker image to Cloud Run
-- [ ] configure SSL termination on Cloud Run
-- [ ] setup Cloud Build and deploy (multi-stage Docker)
-- [ ] setup GitHub build hook
+- [x] setup a DockerFile to make a Caddy container
+- [F] push local docker image to Cloud Run
+- [x] configure SSL termination on Cloud Run
+- [x] Cloud Build and deploy (multi-stage Docker)
+- [x] setup GitHub build hook
 
