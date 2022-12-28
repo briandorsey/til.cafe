@@ -23,6 +23,9 @@ gcloud run deploy til-cafe --allow-unauthenticated --max-instances=3 --region=us
 
 
 # TODOs
+- [ ] think about long term URL structure and post structure. Dates in urls? Date grouping in blog folder? 
+- [ ] Need to figure out a plan for media assets (especially large audio files) Don't want them in the built image, but... is the Automatic SSL gonna get messed up if I want to serve some items from cloud storage as well? 
+- [ ] find something to reformat html, & sass on save
 - [x] add solarized
 - [x] pick a body font
 - [x] create just blog section

@@ -1,5 +1,5 @@
 +++
-title="working Copy app is a very good fit client for iOS"
+title="working Copy app is a very good git client for iOS"
 date=2022-12-26 
 [taxonomies] 
 post_type=["TIL"]
@@ -7,4 +7,4 @@ post_type=["TIL"]
 summary="" 
 +++
 
-If you use gut and have an iOS device, check it out: https://workingcopy.app
+If you use git and have an iOS device, check it out: [https://workingcopy.app](https://workingcopy.app)
