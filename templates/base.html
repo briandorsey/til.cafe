@@ -4,29 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="/style.css" rel="stylesheet" type="text/css">
-{% block rss %}
+{%- block rss %}
     <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
-{% endblock rss %}
-{% block head %}
+{%- endblock rss %}
+{%- block head %}
     <title>{% block title %}{% endblock title %} - {{config.title}}</title>
-{% endblock head %}
+{%- endblock head %}
 </head>
 <body>
     <div id="header">
-        {% block header %}
+        {%- block header %}
         <h1><a href="{{config.base_url}}">{{config.title}}
             (DRAFT)</a> </h1>
         <h2>{{config.description}}</h2>
         </br>
-        {% endblock header %}
+        {%- endblock header %}
     </div>
     <div id="content">{% block content %}{% endblock content %}</div>
     <div id="footer">
-        {% block footer %}
+        {%- block footer %}
         </br></br>
         ----</br>
         [TODO: footer] Made with <a href="https://www.getzola.org/">Zola</a>
-        {% endblock footer %}
+        {%- endblock footer %}
     </div>
 </body>
 </html>

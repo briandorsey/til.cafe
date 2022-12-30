@@ -1,15 +1,16 @@
 {% extends "base.html" %}
-{% block title %} TIL {% endblock title %}
-{% block content %}
-
+{%- block head %} {{ super() }}
+    <a rel="me" href="https://hachyderm.io/@briandorsey">Mastodon</a>
+{%- endblock head %}
+{% block title %} Index {% endblock title %}
+{%- block content %}
 <h3>Posts</h3>
-    {% set section = get_section(path="blog/_index.md") %}
-    {% for page in section.pages %}
+    {%- set section = get_section(path="blog/_index.md") %}
+    {%- for page in section.pages %}
     <p>
     <a href="{{page.permalink}}">{{page.title}}</a> - 
     {{page.taxonomies.post_type[0]}} - {{page.date}}
     <br/>
     &nbsp; &nbsp; {% if page.summary %} {{page.summary | markdown(inline=true) |safe}} {% else %} {{page.extra.summary}} {% endif %}</p>
-    {% endfor %}
-
-{% endblock content %}
+    {%- endfor %}
+{%- endblock content %}
