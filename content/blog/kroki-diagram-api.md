@@ -1,6 +1,6 @@
 +++
 title="Kroki creates diagrams from textual descriptions"
-date=2022-12-25
+date=2022-12-26
 [taxonomies]
 post_type=["TIL"]
 [extra]

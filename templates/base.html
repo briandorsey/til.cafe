@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    {% block head %}
-    <link rel="stylesheet" href="style.css" />
-    <title>{% block title %}{% endblock title %} - 
-    {{config.title}}</title>
-    {% block rss %}
+    <meta name="viewport" content="width=device-width">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+{% block rss %}
     <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
-    {% endblock %}
-<link href="/style.css" rel="stylesheet">
-    {% endblock head %}
+{% endblock rss %}
+{% block head %}
+    <title>{% block title %}{% endblock title %} - {{config.title}}</title>
+{% endblock head %}
 </head>
 <body>
     <div id="header">
@@ -19,7 +18,8 @@
             (DRAFT)</a> </h1>
         <h2>{{config.description}}</h2>
         </br>
-        {% endblock header %}</div>
+        {% endblock header %}
+    </div>
     <div id="content">{% block content %}{% endblock content %}</div>
     <div id="footer">
         {% block footer %}
@@ -30,6 +30,3 @@
     </div>
 </body>
 </html>
-<!--
-        {{__tera_context }}
--->

@@ -1,6 +1,6 @@
 +++
 title="Use iOS and Git? Check out Working Copy"
-date=2022-12-26 
+date=2022-12-27 
 [taxonomies] 
 post_type=["TIL"]
 [extra] 

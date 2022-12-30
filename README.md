@@ -30,6 +30,7 @@ gcloud run deploy til-cafe --allow-unauthenticated --max-instances=3 --region=us
 - [x] pick a body font
 - [x] create just blog section
 - [ ] create main sections and a hello post for each
+- [ ] precommit check to prevent `__tera_context` in templates
 - [x] validate posts showing in atom feed
 - [ ] make a template for each section type
 - [ ] setup Berlely Mono for coding font

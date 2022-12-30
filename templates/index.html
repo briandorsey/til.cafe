@@ -5,7 +5,10 @@
 <h3>Posts</h3>
     {% set section = get_section(path="blog/_index.md") %}
     {% for page in section.pages %}
-    <p>{{page.date}} - {{page.taxonomies.post_type[0]}}  - <a href="{{page.permalink}}">{{page.title}}</a><br/>
+    <p>
+    <a href="{{page.permalink}}">{{page.title}}</a> - 
+    {{page.taxonomies.post_type[0]}} - {{page.date}}
+    <br/>
     &nbsp; &nbsp; {% if page.summary %} {{page.summary | markdown(inline=true) |safe}} {% else %} {{page.extra.summary}} {% endif %}</p>
     {% endfor %}
 
