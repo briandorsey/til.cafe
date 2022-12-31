@@ -14,23 +14,24 @@ Build an audio recorder for unattended overnight outdoor recordings.
 Current target features: 
 
 - *very* reliable.
-- 2x stereo Plug-In-Power analog mic inputs. (for mics similar to [Lom Uši](https://store.lom.audio/products/usi) or [Clippy EM272](https://micbooster.com/clippy-and-pluggy-microphones/98-clippy-stereo-em272-microphone.html#/84-plug_type-right_angle) )
-- reasonably optimized, low power consuption
-- low noise ADC - at least as good or better than noise floor on EM272 capsules
+- onboard stereo mics. MEMS microphones if the new generation are good, or use EM272 capsules.
+- 2x stereo Plug-In-Power analog mic inputs (four inputs). For mics similar to [Lom Uši](https://store.lom.audio/products/usi) or [Clippy EM272](https://micbooster.com/clippy-and-pluggy-microphones/98-clippy-stereo-em272-microphone.html#/84-plug_type-right_angle).
+- analog low cut filter before ADCs. Support enable/disable... maybe cutoff adjustment.
+- low noise ADC - at least as good or better than noise floor on EM272 capsules.
+- parallel ADCs for each input channel - allowing lower gain on one for safety.
+- above implies recording 8 channels at the same time.
+- each channel sampled and recorded at 24bit, up to 96khz (bonus for higher, but not needed for ambience recording).
+- WAV only.
+- excellent embedded metadata in recorded WAV files.
+- reasonably optimized, low power consuption.
 - safely finish writing files (including WAV headers/offsets) on power loss. 
-- Parallel ADCs for each input channel - allowing lower gain on one for safety
-- above implies recording 8 channels at the same time
-- each channel sampled and recorded at 24bit, up to 96khz (bonus for higher, but not needed for ambience recording)
-- WAV only
-- onboard stereo mics. MEMS microphones if the new generation are good, or use EM272 capsules
-- excellent embedded metadata in recorded WAV files
-- functional in a wide range of temperatures, approx: -20C through 50C
+- functional in a wide range of temperatures, approx: -20C through 50C.
 
 Stretch feature goals:
 
-- adjustible PIP voltage (~2-8V) (many capsules operate best at ~8V)
-- dual SD cards & dual simultaneous writing (for backup/reliability)
-- GPS for date and timecode - if clock is accurate enough, doesn't need to run often
+- adjustible PIP voltage (~2-8V) (many capsules operate best at ~8V).
+- dual SD cards & dual simultaneous writing (for backup/reliability).
+- GPS for date and timecode - if clock is accurate enough, doesn't need to run often.
 
 
 # learning plan
