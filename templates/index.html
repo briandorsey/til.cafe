@@ -1,7 +1,4 @@
 {% extends "base.html" %}
-{%- block head %} {{ super() }}
-    <a rel="me" href="https://hachyderm.io/@briandorsey">Mastodon</a>
-{%- endblock head %}
 {% block title %} Index {% endblock title %}
 {%- block content %}
 <h3>Posts</h3>
@@ -14,3 +11,6 @@
     &nbsp; &nbsp; {% if page.summary %} {{page.summary | markdown(inline=true) |safe}} {% else %} {{page.extra.summary}} {% endif %}</p>
     {%- endfor %}
 {%- endblock content %}
+{%- block footer %} {{ super() }}
+    - <a rel="me" href="https://hachyderm.io/@briandorsey">Mastodon</a>
+{%- endblock footer %}
