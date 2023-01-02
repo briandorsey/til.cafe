@@ -5,17 +5,18 @@ date=2022-12-29
 summary="Multi-year learning plan for designing and building an audio recorder."
 +++
 
-# Multi-year plan to build an audio recorder
+Multi-year plan to build an audio recorder. Learn in public. Learn slowly, and through iteration and direct experience.
 
 ## goal - learn and build something real
 
-Build an audio recorder for unattended overnight outdoor recordings. 
+Build an audio recorder for unattended overnight outdoor recordings.
 
 Current target features: 
 
 - *very* reliable.
 - onboard stereo mics. MEMS microphones if the new generation are good, or use EM272 capsules.
 - 2x stereo Plug-In-Power analog mic inputs (four inputs). For mics similar to [Lom Uši](https://store.lom.audio/products/usi) or [Clippy EM272](https://micbooster.com/clippy-and-pluggy-microphones/98-clippy-stereo-em272-microphone.html#/84-plug_type-right_angle).
+    - inputs protected from shorts, overloads (& other potential issues?)
 - analog low cut filter before ADCs. Support enable/disable... maybe cutoff adjustment.
 - low noise ADC - at least as good or better than noise floor on EM272 capsules.
 - parallel ADCs for each input channel - allowing lower gain on one for safety.
@@ -26,12 +27,17 @@ Current target features:
 - reasonably optimized, low power consuption.
 - safely finish writing files (including WAV headers/offsets) on power loss. 
 - functional in a wide range of temperatures, approx: -20C through 50C.
+- designed for electronics hobbiest assembly at home. 
 
 Stretch feature goals:
 
 - adjustible PIP voltage (~2-8V) (many capsules operate best at ~8V).
 - dual SD cards & dual simultaneous writing (for backup/reliability).
 - GPS for date and timecode - if clock is accurate enough, doesn't need to run often.
+
+Non goals: 
+
+- Price optimization. Planning to spend years on this and only build a few. Use high quality parts.
 
 
 # learning plan
@@ -42,32 +48,37 @@ I'm strongly considering doing all the work in-public and as open source hardwar
 
 ## where I'm starting
 
-- software development experience - mostly glue code in Python/Go, comfy with infra stuff
-- very basic electronics & DC power knowledge, from building eurorack kits, fiddling with Arduino/Teensy for simple projects, and remote control cars/planes
-- amature audio recordist - currently recording outdoors, editing and cataloging
+- Software development experience - mostly glue code in Python/Go, comfy with infra stuff.
+- Very basic electronics & DC power knowledge, from building eurorack kits, fiddling with Arduino/Teensy for simple projects, and remote control cars/planes.
+- Amature audio recordist - currently recording outdoors, editing and cataloging.
 
 ## learning plan
 
-- embedded programming
-    - I don't think I'll be able to get the perf needed in Python, and don't want to learn C/C++, so currently thinking of Rust. Currently ~2 months into learning Rust.
-    - Learn Rust fundamentals
-    - Learn embedded Rust via [embedded Rust book}(https://docs.rust-embedded.org/discovery/microbit/)
-    - Work on projects below
--  audio programming
-    - learn about WAV files
-        - _project:_ write command line tool to parse and summarize WAV files & their metadata
-    - learn about sampling analog signals on embedded devices
-        - _project:_ try to write very basic recorder firmware using microbit & onboard MEMS mic. 
+- Embedded programming
+    - I don't think I'll be able to get the perf needed in Python, and don't want to learn C/C++, so thinking of Rust. Currently ~2 months into learning Rust.
+    - Learn Rust fundamentals.
+    - Learn embedded Rust via [embedded Rust book}(https://docs.rust-embedded.org/discovery/microbit/).
+    - _project:_ write program to test SD write path: write synthesized WAV files & log data
+    - Work on projects below.
+- Audio programming
+    - Learn about WAV files.
+        - _project:_ write command line tool to parse and summarize WAV files & their metadata.
+    - Learn about sampling analog signals on embedded devices.
+        - _project:_ try to write very basic recorder firmware using microbit & onboard MEMS mic.
     - _what else am I missing here?_
-- hardware design
+- Audio testing
+    - Learn how to test audio paths - enough to determine and verify the specs of the recorder
+    - EIN, THD, Frequency response, SNR, etc.
+- Hardware design
     - _(no idea where to start really)_
-    - Need to learn fundamentals of analog audio, specifically the mic -> preamp -> ADC path
+    - Need to learn fundamentals of analog audio, specifically the mic -> preamp -> ADC path.
     - Learn some board layout software and iterate on sending designs out to be created? 
         - _project:_ MixPre power adapter board (a very small, power distribution board)
-    - learn how to test audio paths - enough to determine and verify the specs of the recorder
+    - Learn enough to decide on high level architecture (primary chip?, include FPGA?, board modularity?)
     - _what else am I missing here?_
-- Iterate on design, build, test of the actual recorder
+- Iterate on design, build, test of the actual recorder.
     - _project:_ avoid the analog path and build an AES3 recorder (I have a use for a dedicated bit-bucket like this)
+    - Iterate, build, test.
 
 
 
