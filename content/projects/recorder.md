@@ -28,6 +28,7 @@ Current target features:
 - safely finish writing files (including WAV headers/offsets) on power loss. 
 - functional in a wide range of temperatures, approx: -20C through 50C.
 - designed for electronics hobbiest assembly at home. 
+- minimize dependencies where possible
 
 Stretch feature goals:
 
