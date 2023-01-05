@@ -41,4 +41,5 @@ gcloud run deploy til-cafe --allow-unauthenticated --max-instances=3 --region=us
 - [x] configure SSL termination on Cloud Run
 - [x] Cloud Build and deploy (multi-stage Docker)
 - [x] setup GitHub build hook
+- [ ] audio: prototype a WAV-metadata -> compressed audio + sqlite + web app flow. Audio files on GCS, generated sqlite & mini web app in the container. 
 

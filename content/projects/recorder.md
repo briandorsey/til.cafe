@@ -9,7 +9,7 @@ Multi-year plan to build an audio recorder. Learn in public. Learn slowly, and t
 
 ## goal - learn and build something real
 
-Build an audio recorder for unattended overnight outdoor recordings.
+Build an audio recorder for unattended overnight outdoor field recordings.
 
 Current target features: 
 
@@ -21,18 +21,18 @@ Current target features:
 - low noise ADC - at least as good or better than noise floor on EM272 capsules.
 - parallel ADCs for each input channel - allowing lower gain on one for safety.
 - above implies recording 8 channels at the same time.
-- each channel sampled and recorded at 24bit, up to 96khz (bonus for higher, but not needed for ambience recording).
+- each channel sampled and recorded at 24bit, up to 96khz (bonus for higher, but not needed for ambiance recording).
 - WAV only.
 - excellent embedded metadata in recorded WAV files.
-- reasonably optimized, low power consuption.
+- reasonably optimized, low power consumption.
 - safely finish writing files (including WAV headers/offsets) on power loss. 
 - functional in a wide range of temperatures, approx: -20C through 50C.
-- designed for electronics hobbiest assembly at home. 
-- minimize dependencies where possible
+- designed for electronics hobbyist assembly at home. 
+- minimize software dependencies where possible
 
 Stretch feature goals:
 
-- adjustible PIP voltage (~2-8V) (many capsules operate best at ~8V).
+- adjustable PIP voltage (~2-8V) (many capsules operate best at ~8V).
 - dual SD cards & dual simultaneous writing (for backup/reliability).
 - GPS for date and timecode - if clock is accurate enough, doesn't need to run often.
 
@@ -43,15 +43,15 @@ Non goals:
 
 # learning plan
 
-This is primarily a learning project. I want this device to exist, but I also want to use it as an excuse to learn more about audio electronics, embedded programming, board design, testing, etc. Plan is to take the long way to get there, and do the electronics design, phsyical design, firmware authoring, and testing myself. Expecting to build smaller sub-projects along the way to learn by doing & iteration.
+This is primarily a learning project. I want this device to exist, but I also want to use it as an excuse to learn more about audio electronics, embedded programming, board design, testing, etc. Plan is to take the long way to get there, and do the electronics design, physical design, firmware authoring, and testing myself. Expecting to build smaller sub-projects along the way to learn by doing & iteration.
 
-I'm strongly considering doing all the work in-public and as open source hardware/software. But haven't decided yet. 
+Planning to do the work in-public and as open source hardware/software.
 
 ## where I'm starting
 
 - Software development experience - mostly glue code in Python/Go, comfy with infra stuff.
 - Very basic electronics & DC power knowledge, from building eurorack kits, fiddling with Arduino/Teensy for simple projects, and remote control cars/planes.
-- Amature audio recordist - currently recording outdoors, editing and cataloging.
+- Amateur audio recordist - currently recording outdoors, editing and cataloging.
 
 ## learning plan
 
