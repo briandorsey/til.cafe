@@ -30,6 +30,8 @@ gcloud run deploy til-cafe --allow-unauthenticated --max-instances=3 --region=us
 - [x] pick a body font
 - [x] create just blog section
 - [ ] create main sections and a hello post for each
+- [ ] consider - how much to keep in issues, Simon style
+- [ ] consider - what license for content?
 - [ ] precommit check to prevent `__tera_context` in templates
 - [x] validate posts showing in atom feed
 - [ ] add per page and overall site last updated date? 
