@@ -3,7 +3,9 @@ base_url = "/"
 
 # The site title and description; used in feeds by default.
 title = "TIL.cafe"
-description = "Grab a warm drink and let's learn stuff."
+# description = "Grab a warm drink and let's learn stuff."
+description = "TIL.cafe - Brian Dorsey learning in public"
+
 
 # TODO: taxonomies
 

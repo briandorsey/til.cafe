@@ -23,23 +23,22 @@ gcloud run deploy til-cafe --allow-unauthenticated --max-instances=3 --region=us
 
 
 # TODOs
+- [x] create "about" page
+- [x] figure out sections & taxonomies
+- [x] update header to link to sections
 - [ ] think about long term URL structure and post structure. Dates in urls? Date grouping in blog folder? 
 - [ ] Need to figure out a plan for media assets (especially large audio files) Don't want them in the built image, but... is the Automatic SSL gonna get messed up if I want to serve some items from cloud storage as well? 
 - [ ] find something to reformat html, & sass on save
 - [x] add solarized
 - [x] pick a body font
 - [x] create just blog section
-- [ ] create main sections and a hello post for each
 - [ ] consider - how much to keep in issues, Simon style
 - [ ] consider - what license for content?
 - [ ] precommit check to prevent `__tera_context` in templates
 - [x] validate posts showing in atom feed
 - [ ] add per page and overall site last updated date? 
-- [ ] make a template for each section type
 - [ ] setup Berlely Mono for coding font
-- [ ] figure out sections & taxonomies
 - [x] setup a DockerFile to make a Caddy container
-- [F] push local docker image to Cloud Run
 - [x] configure SSL termination on Cloud Run
 - [x] Cloud Build and deploy (multi-stage Docker)
 - [x] setup GitHub build hook

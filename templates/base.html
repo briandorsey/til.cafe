@@ -14,17 +14,44 @@
 <body>
     <div id="header">
         {%- block header %}
-        <h1><a href="{{config.base_url}}">{{config.title}}
-            (DRAFT)</a> </h1>
-        </br>
+        <div class="header-box">
+            <div class="header-item-initial">
+        <h1><a href="{{config.base_url}}">{{config.title}}</a> </h1>
+            </div>
+            <div class="header-item">
+                <a href="/blog/">blog</a>
+            </div>
+            <div class="header-item">
+                <a href="/about">about</a>
+            </div>
+        </div>
         {%- endblock header %}
     </div>
-    <div id="content">{% block content %}{% endblock content %}</div>
+    <div id="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
     <div id="footer">
         {%- block footer %}
-        </br></br>
-        ----</br>
-        [TODO: footer] Made with <a href="https://www.getzola.org/">Zola</a>
+        <br><br>
+        <hr/>
+        <div class="footer-box">
+            <div class="footer-item">
+                <a href="/blog/">archive</a>
+            </div>
+            <div class="footer-item">
+                <a href="https://www.github.com/briandorsey/">GitHub</a>
+            </div>
+            <div class="footer-item">
+                <a href="https://www.linkedin.com/in/briandorsey/">LinkedIn</a>
+            </div>
+            <div class="footer-item">
+                <a rel="me" href="https://hachyderm.io/@briandorsey">Mastodon/ActivityPub</a>
+            </div>
+            <div class="footer-item">
+        |  Made with <a href="https://www.getzola.org/">Zola</a>
+            </div>
+        </div>
         {%- endblock footer %}
     </div>
 </body>
