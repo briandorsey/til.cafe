@@ -4,7 +4,7 @@ date=2023-07-07
 [taxonomies] 
 post_type=["log"]
 [extra] 
-summary="Walkthrough my first experiment and think about *why* their developer experience is so good." 
+summary="Walkthrough of my first experience with developing for Playdate and thinking about *why* their developer experience is so good." 
 +++
 
 I recently got a quirky little handheld gaming device, called [Playdate](https://play.date). I had a fantastic early experience developing for it. It's gotten me more excited about programming than anything else in years. And... I don't understand exactly why. This is my attempt to think it through.
