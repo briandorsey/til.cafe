@@ -55,6 +55,7 @@ Things that worked well for me (first time Playdate developer):
 * I could choose between multiple tools which support different levels of abstraction and programming experience. 
 * The simualator works well and allows quick iterations. 
 * The reference docs are accurate, comprehensive, concise and ... crucially: all in one place. I just scrolled up and down the same page with an occasional search-in-page. 
+* The [developer forums](https://devforum.play.date) are full of useful posts.
 * Constraints simplify. The device and APIs are very focused. It think it could be possible to... just learn them all. Most dev tools feel like they're growing faster than I can keep up.
 * Seeing something you just made on a physical device in your hand just feels good. 
 * I'm of an age where 1-bit visuals are super nostalgic, so I'm sure that helps.
