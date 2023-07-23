@@ -4,7 +4,7 @@ date=2023-07-23
 [taxonomies] 
 post_type=["log"]
 [extra] 
-summary="" 
+summary="I've published a rain soundscape listing app for Playdate handhelds." 
 +++
 
 I've published a rain soundscape listing app for [Playdate](https://play.date) handhelds.
