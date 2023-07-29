@@ -18,9 +18,7 @@ I got a bit confused about how to run it on MacOS, but once it all came together
 I'm on MacOS, and use [homebrew](https://brew.sh), so: 
 
 ```
-
 $ brew install fontforge
-
 ```
 
 Then go to [https://www.nerdfonts.com/](https://www.nerdfonts.com/), scroll to the bottom and download FontPatcher.zip, and unzip that somehwere temporarily. 
@@ -28,9 +26,7 @@ Then go to [https://www.nerdfonts.com/](https://www.nerdfonts.com/), scroll to t
 I also copied the font I wanted to patch into that same directory. 
 
 ```
-
 $ fontforge -script ./font-patcher --complete BerkeleyMono-Regular.otf
-
 ```
 
 The script created a new (*much* larger) font named `Berkeley Mono Regular Nerd Font Complete.otf`. I copied that to `/Users/USER/Library/Fonts/` (where USER is my local username) and updated my terminal program's config to use this. Done! 

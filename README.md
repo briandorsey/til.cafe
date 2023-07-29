@@ -9,6 +9,8 @@ zola build
 
 ```
 zola serve
+or
+zola serve -i 0.0.0.0 -u max.cat-bass.ts.net
 ```
 
 docker stuff
