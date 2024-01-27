@@ -1,3 +1,5 @@
+- tools for measuring power use - kill-a-watt, usb, meters
+- seamless looping ADPCM files - need to figure out the actual number of samples in each block, then change source file to have that many samples in it. (more details in Notes)
 - designed and ordered my first PCB!
 - initial spike of this blog - goals, how it works, etc. GH to online, static site, etc. 
     - https://doc.rust-lang.org/book/ch15-03-drop.html
@@ -5,3 +7,7 @@
 - how I process FRS freebies
 - https://crawshaw.io/blog/one-process-programming-notes - comments, inspiration from it, etc? - or maybe just a TIL? 
 - MD raw data
+- TIL: https://ma.ttias.be/pretty-git-log-in-one-line/
+- post about actual MixPre power usage
+  - https://www.sounddevices.com/mixpre-3-mixpre-6-powering-options/
+  - measurements from each - while idle, recording, p48, etc

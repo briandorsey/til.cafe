@@ -5,6 +5,7 @@ draft=true
 
 [taxonomies] 
 post_type=["TIL"]
+#post_type=["log"]
 [extra] 
 summary="SUMMARY" 
 +++
