@@ -1,6 +1,5 @@
 +++
 title="Learning project: build an audio recorder"
-date=2022-12-29 
 [extra] 
 summary="Multi-year learning plan for designing and building an audio recorder."
 +++

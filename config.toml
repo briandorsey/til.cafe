@@ -1,10 +1,11 @@
 # The URL the site will be built for
-base_url = "/"
+base_url = "https://TIL.cafe"
 
 # The site title and description; used in feeds by default.
 title = "TIL.cafe"
 # description = "Grab a warm drink and let's learn stuff."
 description = "TIL.cafe - Brian Dorsey learning in public"
+author = "Brian Dorsey"
 
 
 # TODO: taxonomies
