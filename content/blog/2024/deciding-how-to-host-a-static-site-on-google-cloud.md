@@ -29,11 +29,7 @@ Context always matters. Here are some goals and constraints I had in mind while 
 - **hosted on Google Cloud** \
   It's the environment I know best. (I work there).
 - **text file based authoring, stored in a version control system** \
-<<<<<<< Updated upstream
-  I'm a software developer and want to use tools I'm familar with.
-=======
   I'm a software developer and want to use tools I'm familiar with.
->>>>>>> Stashed changes
 - **low administration overhead, hopefully zero maintenance** \
   I've done a lot of infrastructure work so it's really easy to spend time fiddling with stuff instead of writing words. Writing words is hard. The more reliable things are, the less time I'll spend fiddling with software instead of writing words. 
 - **easy site updates** \
@@ -49,11 +45,7 @@ Here are the options I considered and their tradeoffs (for this goal).
 
 [Cloud Storage](https://cloud.google.com/storage/docs/introduction) is my favorite Google Cloud Service. There, I said it. Sorry, other services. You give it a file and a name, it keeps it for you. When you give it the name later, it gives you the file again. That's the contract. It's *very* reliable. [Cloud Storage is designed for 99.999999999% (11 9's) annual durability](https://cloud.google.com/storage/docs/availability-durability). It's fast and affordable. 
 
-<<<<<<< Updated upstream
-It's also... a bit fiddly when used for direct web hosting. It can do it, and there are solutions for most things you probably want to do... [but it's fiddly](https://cloud.google.com/storage/docs/static-website). I was also a bit worried about things getting out of sync as I add and remove files over time. `gsutil rsync` would solve that... but I'm still diffing a collection of files for each deployment, I'd love atomic deployments and rollbacks. The big bummer for my use-case is that you can't directly serve HTTPS traffic via a custom domain without paying an time-based (rather than usage based) fee for a load balancer. Drat.
-=======
 It's also... a bit fiddly when used for direct web hosting. It can do it, and there are solutions for most things you probably want to do... [but it's fiddly](https://cloud.google.com/storage/docs/static-website). I was also a bit worried about things getting out of sync as I add and remove files over time. `gsutil rsync` would solve that... but I'm still diffing a collection of files for each deployment, I'd love atomic deployments and rollbacks. The big bummer for my use-case is that you can't directly serve HTTPS traffic via a custom domain without paying a time-based (rather than usage based) fee for a load balancer. Drat.
->>>>>>> Stashed changes
 
 > If you'd like to try it out, this is a nice tutorial [exploring static sites on Cloud Storage](https://cloud.google.com/storage/docs/hosting-static-website)
 
@@ -69,11 +61,7 @@ As someone new to it, though... it also seemed like... maybe more than I need fo
 
 "[Google Cloud Run](https://cloud.google.com/run/docs/overview/what-is-cloud-run) is a managed compute platform that lets you run containers..." ... so... why am I looking at a container hosting platform for my static site? Well... partly because I'm a programmer and I'm just sure I'll want some kind of dynamic content at some point. Yes... even when trying to keep things simple, I can't help myself. 
 
-<<<<<<< Updated upstream
-But keeping things to static site hosting... It handles HTTPS certificate generation and termination. Scaling up and (especially important for this blog) down to zero. Containers are designed for ecapsualtion, so I get atomic deployments and rollbacks. You can point Cloud Run at a GitHub repository and it will automatically build and deploy a new version of the site after every push to a branch. Neat. This seemed like a complexity sweetspot for me. 
-=======
 But keeping things to static site hosting... It handles HTTPS certificate generation and termination. Scaling up and (especially important for this blog) down to zero. Containers are designed for encapsulation, so I get atomic deployments and rollbacks. You can point Cloud Run at a GitHub repository and it will automatically build and deploy a new version of the site after every push to a branch. Neat. This seemed like a complexity sweetspot for me. 
->>>>>>> Stashed changes
 
 > Several [Cloud Run quickstart tutorials](https://cloud.google.com/run/docs/quickstarts)
 
