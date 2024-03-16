@@ -1,3 +1,5 @@
+- details of hosting a static site on Cloud Run
+  - https://daniel-azuma.com/blog/2019/07/01/deploying-my-blog-to-google-cloud-run
 - TIL: https://flaky.build/built-in-workaround-for-applications-hiding-under-the-macbook-pro-notch
 - tools for measuring power use - kill-a-watt, usb, meters
 - seamless looping ADPCM files - need to figure out the actual number of samples in each block, then change source file to have that many samples in it. (more details in Notes)
