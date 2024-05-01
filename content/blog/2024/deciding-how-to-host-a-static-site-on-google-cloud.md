@@ -71,6 +71,6 @@ After a bit of research and fiddling, I ended up with a nice pattern for deployi
 
 Now that it's all set up, I edit text files and preview locally, then push when I'm ready to publish. Everything after that happens automatically. I've been running it this way for over a year, and haven't had to think about it or troubleshoot anything. I consider that a win! (for this kind of site! :) )
 
-In a future post, I'll walk through the details of setting it up. In the mean time, you can check out the [source here](https://github.com/briandorsey/til.cafe). In particular, the `Dockerfile` and `Caddyfile` are all that's needed to host the output of pretty much any static site generator via Cloud Run. 
+In a future post, I'll walk through the details of setting it up. (Update: [details post is here](@/blog/2024/hosting-static-web-site-using-google-cloud-run.md)). In the mean time, you can check out the [source here](https://github.com/briandorsey/til.cafe). In particular, the `Dockerfile` and `Caddyfile` are all that's needed to host the output of pretty much any static site generator via Cloud Run. 
 
 
