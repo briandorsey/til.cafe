@@ -28,12 +28,16 @@ Current target features:
 - functional in a wide range of temperatures, approx: -20C through 50C.
 - designed for electronics hobbyist assembly at home. 
 - minimize software dependencies where possible
+- API for control, device status and metadata updates.
 
 Stretch feature goals:
 
 - adjustable PIP voltage (~2-8V) (many capsules operate best at ~8V).
+- XLR inputs
 - dual SD cards & dual simultaneous writing (for backup/reliability).
 - GPS for date and timecode - if clock is accurate enough, doesn't need to run often.
+- modular design: swappable analog input sections (PiP, XLR, built-in), power, UX on separate boards
+- API is also available remotely (BLE, or maybe LoRa)
 
 Non goals: 
 
