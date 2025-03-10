@@ -10,7 +10,8 @@ author = "Brian Dorsey"
 
 # TODO: taxonomies
 
-generate_feed = true
+generate_feeds = true
+feed_filenames = ["atom.xml"]
 # The number of articles to include in the feed. All items are included if
 # this limit is not set (the default).
 feed_limit = 200
